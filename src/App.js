@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Story from './Story';
+import Legacy from './Legacy';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
           <Route path='/' element={<Home />} />
           <Route path='/story' element={<Story />} />
+          <Route path='/legacy' element={<Legacy />} />
           <Route path='*' element={<Navigate replace to='/' />} />
 
         </Routes>

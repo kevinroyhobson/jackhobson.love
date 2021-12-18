@@ -8,6 +8,7 @@ import jackIsASoxFan from './img/jack-is-a-sox-fan.jpg';
 import jackLookingLikeRocky from './img/jack-looking-like-rocky.jpg';
 import jackLovesHisMom from './img/jack-loves-his-mom.jpg';
 import jackMakesContact from './img/jack-makes-contact.jpg';
+import jackMeditates from './img/jack-meditates.jpg';
 import jackMeetsHisGrandparents from './img/jack-meets-his-grandparents.jpg';
 import jacksParentsAreTired from './img/jacks-parents-are-tired.jpg';
 import jackReads from './img/jack-reads.jpg';
@@ -30,6 +31,7 @@ export default function Home(props) {
     {src: jackLookingLikeRocky, alt: "Jack looks like Rocky"},
     {src: jackLovesHisMom, alt: "Jack loves his mom"},
     {src: jackMakesContact, alt: "Jack makes contact"},
+    {src: jackMeditates, alt: "Jack meditates"},
     {src: jackMeetsHisGrandparents, alt: "Jack meets his grandparents"},
     {src: jacksParentsAreTired, alt: "Jack's parents are tired"},
     {src: jackReads, alt: "Jack reads"},
@@ -43,12 +45,12 @@ export default function Home(props) {
     <Box>
       <Box>
         <Typography sx={{ fontSize: '3rem',
-          textTransform: 'uppercase' }}>
+                          textTransform: 'uppercase' }}>
           Jack Robert Hobson
         </Typography>
 
         <Typography sx={{ fontSize: '2rem',
-          textTransform: 'uppercase' }}>
+                          textTransform: 'uppercase' }}>
           September 20 - October 19, 2021
         </Typography>
       </Box>
