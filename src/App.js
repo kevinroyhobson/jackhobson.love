@@ -5,6 +5,7 @@ import './App.css';
 import Home from './Home';
 import Story from './Story';
 import Legacy from './Legacy';
+import Eulogy from './Eulogy';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/story' element={<Story />} />
           <Route path='/legacy' element={<Legacy />} />
+          <Route path='/eulogy' element={<Eulogy />} />
           <Route path='*' element={<Navigate replace to='/' />} />
 
         </Routes>
