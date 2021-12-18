@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 
-import footprint from './img/footprint.jpg';
+import footprint from './img/footprint.png';
 import heartDrawing from './img/heart-drawing.png';
 
 
@@ -31,8 +31,7 @@ export default function Legacy(props) {
           and love of our spirits. We attended to his needs in response to the beeps of his vitals monitors rather than
           the sound of his cries. We helped the nurses change and bath him while trying not to disrupt the critical IVs
           and equipment surrounding him. Bonding for us involved a lot of finger holding and intense eye contact in
-          those moments that he was awake and alert. We pushed ourselves to stay positive and hopeful throughout the
-          ordeal.
+          those moments that he was awake and alert. We pushed ourselves to stay positive and hopeful throughout it all.
         </Typography>
 
         <Typography sx={{ pt: 3, textAlign: 'left' }}>
@@ -115,9 +114,13 @@ export default function Legacy(props) {
 
           <Grid item xs={0} md={1}></Grid>
 
+
           <Grid item xs={12} md={3}>
-            <img src={heartDrawing} width='100%' alt="Not Jack's heart"/>
+            <Box sx={{pt: {'md': 6}}}>
+              <img src={heartDrawing} width='100%' alt="Not Jack's heart"/>
+            </Box>
           </Grid>
+
 
           <Grid item xs={0} md={2.5}></Grid>
 
