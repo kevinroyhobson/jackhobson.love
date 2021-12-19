@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
 import carmensFavorite from './img/carmens-favorite.png';
-import kevinsFavorite from './img/kevins-favorite.jpg';
+import kevinsFavorite from './img/kevins-favorite.png';
 import daniellesFavorite from './img/danielles-favorite.png';
 import laurasFavorite from './img/lauras-favorite.png';
 
@@ -25,7 +25,7 @@ export default function Story(props) {
       <Box>
 
         <Typography sx={{ pt: 5, textAlign: 'left' }}>
-          A beautiful baby boy named Jack was born on Monday, September 20, 2021 at 6:20pm under a full moon at Norwalk Hospital in Connecticut.
+          A beautiful baby boy named Jack was born the evening of Monday, September 20, 2021 under a full moon at Norwalk Hospital in Connecticut.
           Due to a difficult labor ending in a dramatic cesarian delivery, Jack came into the world with a sizable cut over his left eye.
           Kevin held the 7 lb, 13oz bundle of joy while Danielle shook off the general anaesthesia.
           Once Jack and Danielle were properly introduced, they were able to nurse briefly before Jack was taken away to have his scalpel injury stitched up by a plastic surgeon.
