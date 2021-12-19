@@ -4,10 +4,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import carmensFavorite from './img/carmens-favorite.jpg';
+import carmensFavorite from './img/carmens-favorite.png';
 import kevinsFavorite from './img/kevins-favorite.jpg';
 import daniellesFavorite from './img/danielles-favorite.png';
-import laurasFavorite from './img/lauras-favorite.jpg';
+import laurasFavorite from './img/lauras-favorite.png';
 
 
 export default function Story(props) {
