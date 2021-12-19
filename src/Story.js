@@ -6,14 +6,14 @@ import Grid from '@mui/material/Grid';
 
 import carmensFavorite from './img/carmens-favorite.jpg';
 import kevinsFavorite from './img/kevins-favorite.jpg';
-import daniellesFavorite from './img/danielles-favorite.jpg';
+import daniellesFavorite from './img/danielles-favorite.png';
 import laurasFavorite from './img/lauras-favorite.jpg';
 
 
 export default function Story(props) {
 
   return (
-    <Box>
+    <Box sx={{ px: { xs: 1, md: '20%' }}}>
       <Box>
         <Typography sx={{ fontSize: '3rem',
                           textTransform: 'uppercase' }}>
@@ -22,7 +22,7 @@ export default function Story(props) {
 
       </Box>
 
-      <Box sx={{ px: { xs: 1, md: '20%' }}}>
+      <Box>
 
         <Typography sx={{ pt: 5, textAlign: 'left' }}>
           A beautiful baby boy named Jack was born on Monday, September 20, 2021 at 6:20pm under a full moon at Norwalk Hospital in Connecticut.
@@ -56,23 +56,23 @@ export default function Story(props) {
 
       </Box>
 
-      <Box sx={{pt: 5}}>
+      <Box sx={{ pt: 5}}>
 
         <Grid container spacing={2}>
 
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={6}>
             <img src={carmensFavorite} width='100%' alt="Carmen's favorite" />
           </Grid>
 
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={6}>
             <img src={kevinsFavorite} width='100%' alt="Kevin's favorite"  />
           </Grid>
 
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={6}>
             <img src={daniellesFavorite} width='100%' alt="Danielle's favorite"  />
           </Grid>
 
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={6}>
             <img src={laurasFavorite} width='100%' alt="Laura's favorite"  />
           </Grid>
 

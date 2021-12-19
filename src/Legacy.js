@@ -12,7 +12,7 @@ import heartDrawing from './img/heart-drawing.png';
 export default function Legacy(props) {
 
   return (
-    <Box>
+    <Box sx={{ px: { xs: 1, md: '20%' }}}>
       <Box>
         <Typography sx={{ fontSize: '3rem',
                           textTransform: 'uppercase' }}>
@@ -21,7 +21,7 @@ export default function Legacy(props) {
 
       </Box>
 
-      <Box sx={{ px: { xs: 1, md: '20%' }}}>
+      <Box>
 
         <Typography sx={{ pt: 5, textAlign: 'left' }}>
           Kevin and I had a very difficult entry into the world of parenthood. During the 29 days Jack was in the
@@ -102,27 +102,21 @@ export default function Legacy(props) {
 
       </Box>
 
-      <Box sx={{ pt: 5 }}>
+      <Box sx={{ pt: {'xs': 1, 'md': 5 }}}>
 
         <Grid container spacing={2}>
 
-          <Grid item xs={0} md={2.5}></Grid>
-
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={5.5}>
             <img src={footprint} width='100%' alt="Jack's footprint" />
           </Grid>
 
           <Grid item xs={0} md={1}></Grid>
 
-
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={5.5}>
             <Box sx={{pt: {'md': 6}}}>
               <img src={heartDrawing} width='100%' alt="Not Jack's heart"/>
             </Box>
           </Grid>
-
-
-          <Grid item xs={0} md={2.5}></Grid>
 
         </Grid>
 
