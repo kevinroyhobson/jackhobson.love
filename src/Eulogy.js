@@ -59,7 +59,7 @@ export default function Eulogy(props) {
         </Typography>
 
         <Typography sx={{ textAlign: 'left', textIndent: '55%' }}>
-          -Dad
+          --Dad
         </Typography>
 
       </Box>
