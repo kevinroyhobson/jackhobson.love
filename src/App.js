@@ -6,6 +6,7 @@ import Home from './Home';
 import Story from './Story';
 import Legacy from './Legacy';
 import Eulogy from './Eulogy';
+import MobileNavigation from './MobileNavigation';
 
 
 function App() {
@@ -15,14 +16,14 @@ function App() {
 
       <BrowserRouter>
 
-        <Routes>
+        <MobileNavigation />
 
+        <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/story' element={<Story />} />
           <Route path='/legacy' element={<Legacy />} />
           <Route path='/eulogy' element={<Eulogy />} />
           <Route path='*' element={<Navigate replace to='/' />} />
-
         </Routes>
 
       </BrowserRouter>

@@ -61,12 +61,13 @@ export default function Home(props) {
                   infiniteLoop={true}
                   stopOnHover={false}
                   showThumbs={false}
+                  showStatus={false}
                   useKeyboardArrows={true}
                   emulateTouch={true}>
 
           {images.map(image => {
             return (
-              <Box sx={{height: '75vh'}}>
+              <Box sx={{height: {xs: '45vh', sm: '75vh'} }}>
                 <img src={image.src} alt={image.alt} style={{objectFit: 'contain'}} height='100%' />
               </Box>
             );
