@@ -18,12 +18,12 @@ export default function Eulogy(props) {
       <img src={theSound} height='100%' width='100%' style={{objectFit: 'cover'}} alt="Green's Ledge Light" />
 
       <Box sx={{position: 'absolute',
-                left: 50,
-                right: '65%',
-                top: 50,
-                backgroundColor: 'rgba(200, 200, 225, 0.8)',
+                left: '45%',
+                right: '5%',
+                top: '25%',
+                backgroundColor: 'rgba(140, 157, 175, 0.6)',
                 p: 2,
-                borderRadius: 2}}>
+                borderRadius: 2 }}>
 
         <Typography sx={{ textAlign: 'right' }}>
           10/28/21
