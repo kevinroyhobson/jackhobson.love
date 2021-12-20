@@ -9,18 +9,22 @@ import theSound from './img/the-sound.jpg';
 export default function Eulogy(props) {
 
   return (
-    <Box sx={{ position: 'fixed',
+    <React.Fragment>
+
+      <Box sx={{ position: 'fixed',
                top: 49,
                bottom: 0,
                left: 0,
-               right: 0}}>
+               right: 0,
+               overflowY: { xs: 'scroll', sm: 'inherit' } }}>
 
-      <img src={theSound} height='100%' width='100%' style={{objectFit: 'cover'}} alt="Green's Ledge Light" />
+        <img src={theSound} height='100%' width='100%' style={{objectFit: 'cover'}} alt="Green's Ledge Light" />
+      </Box>
 
       <Box sx={{position: 'absolute',
                 left: { xs: '3%', sm: '45%' },
                 right: { xs: '3%', sm: '5%' },
-                top: { xs: '5%', sm: '25%' },
+                top: { xs: '60px', sm: '25%' },
                 backgroundColor: 'rgba(140, 157, 175, 0.6)',
                 p: 2,
                 borderRadius: 2 }}>
@@ -63,7 +67,6 @@ export default function Eulogy(props) {
         </Typography>
 
       </Box>
-
-    </Box>
+    </React.Fragment>
   );
 }
