@@ -50,47 +50,51 @@ export default function Legacy(props) {
           Jack will always be our first child and an important presence in our family.
         </Typography>
 
-        <Typography sx={{ pt: 3, textAlign: 'left' }}>
+        <Typography sx={{ pt: { xs: 3, sm: 5 }, textAlign: 'left', fontSize: '2rem' }}>
           Donations can be made in Jack's name to the following charities:
         </Typography>
 
         <Box sx={{ pt: 3 }}>
 
-          <Typography sx={{ pb: 1, textAlign: 'left'}}>
+          <Typography sx={{ pb: 2, textAlign: 'left'}}>
             <Link href='https://www.childrensheartfoundation.org/'
                   target='_blank'
                   rel='noopener'
-                  underline='hover'>
+                  underline='hover'
+                  sx={{ fontWeight: 'bold' }}>
               The Children's Heart Foundation
             </Link>:
             advancing the diagnosis, treatment and prevention of congenital heart defects by funding the most promising research.
           </Typography>
 
-          <Typography sx={{ pb: 1, textAlign: 'left' }}>
+          <Typography sx={{ pb: 2, textAlign: 'left' }}>
             <Link href='https://www.rmhc-ctma.org/'
                   target='_blank'
                   rel='noopener'
-                  underline='hover'>
+                  underline='hover'
+                  sx={{ fontWeight: 'bold' }}>
               Ronald McDonald House Charities of Connecticut and Western Massachusetts
             </Link>:
             providing a home-away-from-home for families who must travel far for their child's healthcare.
           </Typography>
 
-          <Typography sx={{ pb: 1, textAlign: 'left' }}>
+          <Typography sx={{ pb: 2, textAlign: 'left' }}>
             <Link href='https://mendedhearts.org/about-us/about-mended-little-hearts/'
                   target='_blank'
                   rel='noopener'
-                  underline='hover'>
+                  underline='hover'
+                  sx={{ fontWeight: 'bold' }}>
               Mended Little Hearts
             </Link>:
             providing hope and support to "the littlest heart patients of all" and their families.
           </Typography>
 
-          <Typography sx={{ pb: 1, textAlign: 'left' }}>
+          <Typography sx={{ pb: 2, textAlign: 'left' }}>
             <Link href='https://www.hopeafterloss.org/'
                   target='_blank'
                   rel='noopener'
-                  underline='hover'>
+                  underline='hover'
+                  sx={{ fontWeight: 'bold' }}>
               Hope After Loss
             </Link>:
             helping those who experience pregnancy or infant loss to find the inspiration of hope by providing

@@ -9,8 +9,7 @@ import Home from './Home';
 import Story from './Story';
 import Legacy from './Legacy';
 import Eulogy from './Eulogy';
-import MobileNavigation from './MobileNavigation';
-import DesktopNavigation from './DesktopNavigation';
+import Navigation from './Navigation';
 
 
 function App() {
@@ -33,10 +32,9 @@ function App() {
 
         <BrowserRouter>
 
-          {/*<MobileNavigation />*/}
-          <DesktopNavigation />
+          <Navigation />
 
-          <Box sx={{ pt: { xs: 0, sm: 8 } }}></Box>
+          <Box sx={{ pt: 8 }}></Box>
 
           <Routes>
             <Route path='/' element={<Home />} />

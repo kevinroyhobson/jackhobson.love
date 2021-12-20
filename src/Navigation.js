@@ -10,7 +10,7 @@ import Link from '@mui/material/Link';
 import moon from './img/moon-work.png';
 
 
-export default function DesktopNavigation(props) {
+export default function Navigation(props) {
 
   const navigate = useNavigate();
 
@@ -31,20 +31,25 @@ export default function DesktopNavigation(props) {
   return (
 
     <Box sx={{ position: 'fixed',
+               top: 0,
                width: '100%',
                display: 'flex',
                backgroundColor: '#bad0e8',
                boxShadow: 3 }}>
 
-      <Box sx={{ pt: '1px', mx: 2, cursor: 'pointer' }}
+      <Box sx={{ display: { xs: 'none', sm: 'block' },
+                 pt: '1px',
+                 mx: 2,
+                 cursor: 'pointer' }}
            onClick={() => navigate('/')}>
         <img src={moon} height={44} alt='The moon'/>
       </Box>
 
-      <Box sx={{ pt: 1.85,
+      <Box sx={{ display: { xs: 'none', sm: 'block' },
+                 pt: 1.85,
                  px: 1 }}>
         <Link color='primary'
-              underline='never'
+              underline='hover'
               sx={{ cursor: 'pointer', fontWeight: 'bold' }}
               onClick={() => navigate('/')}>
           jackhobson.love
@@ -52,7 +57,8 @@ export default function DesktopNavigation(props) {
       </Box>
 
       <Box sx={{ marginLeft: 'auto',
-                 px: 2 }}>
+                 marginRight: { xs: 'auto', sm: 'inherit' },
+                 px: {xs: 0, sm: 2 } }}>
         <Tabs value={activeLinkIndex} onChange={handleChange}>
           {links.map(link => {
             return (
@@ -70,5 +76,3 @@ export default function DesktopNavigation(props) {
     </Box>
   );
 }
-
-
