@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import _ from 'lodash';
 
@@ -8,11 +8,13 @@ import Tab from '@mui/material/Tab';
 import Link from '@mui/material/Link';
 
 import moon from './img/moon-work.png';
+import useAnalyticsTracking from './useAnalyticsTracking';
 
 
 export default function Navigation(props) {
 
   const navigate = useNavigate();
+  useAnalyticsTracking();
 
   const links = [
     { name: 'Jack', path: '/' },
@@ -28,11 +30,16 @@ export default function Navigation(props) {
   let currentPath = useLocation().pathname;
   let activeLinkIndex = _.filter([0, 1, 2, 3], index => links[index].path === currentPath)[0];
 
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [currentPath]);
+
   return (
 
     <Box sx={{ position: 'fixed',
                top: 0,
                width: '100%',
+               zIndex: 100,
                display: 'flex',
                backgroundColor: '#bad0e8',
                boxShadow: 3 }}>

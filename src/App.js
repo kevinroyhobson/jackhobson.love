@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 
 import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -13,6 +14,8 @@ import Navigation from './Navigation';
 
 
 function App() {
+
+  ReactGA.initialize('G-YXC1S3LN8R');
 
   const theme = createTheme({
     palette: {
