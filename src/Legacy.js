@@ -12,10 +12,9 @@ import heartDrawing from './img/heart-drawing.png';
 export default function Legacy(props) {
 
   return (
-    <Box sx={{ px: { xs: 1, md: '20%' }}}>
+    <Box sx={{ px: { xs: 1, sm: '20%' }}}>
       <Box>
-        <Typography sx={{ fontSize: '3rem',
-                          textTransform: 'uppercase' }}>
+        <Typography sx={{ fontSize: { xs: '3rem', sm: '3rem', lg: '4rem' } }}>
           Jack's Legacy
         </Typography>
 

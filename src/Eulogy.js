@@ -10,7 +10,7 @@ export default function Eulogy(props) {
 
   return (
     <Box sx={{ position: 'fixed',
-               top: 0,
+               top: 49,
                bottom: 0,
                left: 0,
                right: 0}}>

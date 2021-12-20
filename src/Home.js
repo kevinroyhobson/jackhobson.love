@@ -44,18 +44,17 @@ export default function Home(props) {
   return (
     <Box>
       <Box>
-        <Typography sx={{ fontSize: '3rem',
-                          textTransform: 'uppercase' }}>
+        <Typography sx={{ fontSize: { xs: '3rem', sm: '3rem', lg: '4rem' } }}>
           Jack Robert Hobson
         </Typography>
 
-        <Typography sx={{ fontSize: '2rem',
-                          textTransform: 'uppercase' }}>
+        <Typography sx={{ fontSize: { xs: '1.5rem', sm: '1.5rem', lg: '2rem' } }}>
           September 20 - October 19, 2021
         </Typography>
       </Box>
 
-      <Box sx={{py: 3}}>
+      <Box sx={{pt: { xs: 0, sm: 3 },
+                pb: 3 }}>
         <Carousel autoPlay={true}
                   interval={5000}
                   infiniteLoop={true}
@@ -67,7 +66,7 @@ export default function Home(props) {
 
           {images.map(image => {
             return (
-              <Box sx={{height: {xs: '45vh', sm: '75vh'} }}>
+              <Box sx={{height: {xs: '45vh', sm: '70vh'} }}>
                 <img src={image.src} alt={image.alt} style={{objectFit: 'contain'}} height='100%' />
               </Box>
             );

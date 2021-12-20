@@ -13,10 +13,9 @@ import laurasFavorite from './img/lauras-favorite.png';
 export default function Story(props) {
 
   return (
-    <Box sx={{ px: { xs: 1, md: '20%' }}}>
+    <Box sx={{ px: { xs: 1, sm: '20%' }}}>
       <Box>
-        <Typography sx={{ fontSize: '3rem',
-                          textTransform: 'uppercase' }}>
+        <Typography sx={{ fontSize: { xs: '3rem', sm: '3rem', lg: '4rem' } }}>
           Jack's Story
         </Typography>
 
@@ -27,7 +26,6 @@ export default function Story(props) {
         <Typography sx={{ pt: 5, textAlign: 'left' }}>
           A beautiful baby boy named Jack was born the evening of Monday, September 20, 2021 under a full moon at Norwalk Hospital in Connecticut.
           Due to a difficult labor ending in a dramatic cesarian delivery, Jack came into the world with a sizable cut over his left eye.
-          Kevin held the 7 lb, 13oz bundle of joy while Danielle shook off the general anaesthesia.
           Once Jack and Danielle were properly introduced, they were able to nurse briefly before Jack was taken away to have his scalpel injury stitched up by a plastic surgeon.
           The family had only settled into their postpartum recovery room for a couple of hours before a nurse noticed that baby Jack was not doing so well.
         </Typography>
@@ -41,6 +39,7 @@ export default function Story(props) {
         <Typography sx={{ pt: 3, textAlign: 'left' }}>
           As Jack grew stronger, Kevin read to him from his namesake's autobiography -- Jackie Robinson's <i>I Never Had It Made</i>.
           Danielle drew illustrations of the animals waiting to meet Jack back at their home in Village Creek.
+          They surrounded him with love and stories from their friends and family.
           The arterial switch surgery was performed on October 14, but Jack suffered a stroke in the days following the operation.
           On Tuesday, October 19 -- under the next full moon -- Jack went outside for the first time and died in his parents' arms.
           He was surrounded by the love of his parents, his grandparents and his dedicated care team.
