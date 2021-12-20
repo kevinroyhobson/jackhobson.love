@@ -43,11 +43,11 @@ export default function Legacy(props) {
         <Typography sx={{ pt: 3, textAlign: 'left' }}>
           We are fortunate to be surrounded by an incredible collection of family and friends who have reached out with
           support in the days since Jack's death. We ask that you always remember him and do not hesitate to speak of
-          him in the days and years to come.
+          him in the days and years to come. Jack will always be our first child and an important presence in our family.
         </Typography>
 
         <Typography sx={{ pt: 3, textAlign: 'left' }}>
-          Jack will always be our first child and an important presence in our family.
+          If you'd like to reach Danielle or Kevin, you can get us at mom at jackhobson dot love or dad at jackhobson dot love.
         </Typography>
 
         <Typography sx={{ pt: { xs: 3, sm: 5 }, textAlign: 'left', fontSize: '2rem' }}>
