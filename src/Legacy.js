@@ -47,7 +47,7 @@ export default function Legacy(props) {
         </Typography>
 
         <Typography sx={{ pt: 3, textAlign: 'left' }}>
-          If you'd like to reach Danielle or Kevin, you can get us at mom at jackhobson dot love or dad at jackhobson dot love.
+          If you'd like to reach Danielle or Kevin, you can get us at mom at jackhobson.love or dad at jackhobson.love.
         </Typography>
 
         <Typography sx={{ pt: { xs: 3, sm: 5 }, textAlign: 'left', fontSize: '2rem' }}>
