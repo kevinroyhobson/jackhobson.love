@@ -25,7 +25,7 @@ export default function Eulogy(props) {
                 left: { xs: '3%', sm: '45%' },
                 right: { xs: '3%', sm: '5%' },
                 top: { xs: '60px', sm: '25%' },
-                backgroundColor: 'rgba(140, 157, 175, 0.6)',
+                backgroundColor: { xs: 'rgba(140, 157, 175, 0.75)', sm: 'rgba(140, 157, 175, 0.6)' },
                 p: 2,
                 borderRadius: 2 }}>
 
