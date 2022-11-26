@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 
 import footprint from './img/footprint.png';
-import heartDrawing from './img/heart-drawing.png';
+import transposition from './img/transposition.png';
 
 
 export default function Legacy(props) {
@@ -116,8 +116,8 @@ export default function Legacy(props) {
           <Grid item xs={0} md={1}></Grid>
 
           <Grid item xs={12} md={5.5}>
-            <Box sx={{pt: {'md': 6}}}>
-              <img src={heartDrawing} width='100%' alt="Not Jack's heart"/>
+            <Box sx={{pt: {'md': 12}}}>
+              <img src={transposition} width='100%' alt="Jack's heart"/>
             </Box>
           </Grid>
 
